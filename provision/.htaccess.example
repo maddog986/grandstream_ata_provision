@@ -1,0 +1,12 @@
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile /var/www/vhosts/yourwebsite.com/.htpasswd
+Require valid-user
+Order allow,deny
+Allow from 107.190.210.194
+Satisfy Any
+
+Options +Indexes
+
+RewriteEngine On
+RewriteRule ^cfg([a-zA-Z0-9]+).xml$ provision.php?mac=$1 [NC]

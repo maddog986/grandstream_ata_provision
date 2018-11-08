@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Grandstream HT814 XML Provisioning Configuration. -->
+<gs_provision version="1">
+<mac>CHANGEME_MAC_ADDRESS</mac>
+  <config version="1">
+    <!-- device name -->
+    <P146>ata_CHANGEME</P146>
+
+    <!-- Admin password for web interface -->
+    <P2>password</P2>
+
+    <P1360></P1360> <!-- HTTP/HTTPS User Name -->
+    <P1361></P1361> <!--HTTP/HTTPS Password-->
+
+    <!-- 3CX Auto Provision. 0 - No, 1 - Yes. Default is Yes. -->
+    <P1414>0</P1414>
+
+    <!-- PROVISION -->
+    <P237>yourdomain.com/grandstream/provision</P237> <!-- Config Server Path -->
+    <P145>0</P145> <!-- Allow DHCP Option 66 or 160 to override server. 0 - No, 1 - Yes. Default is Yes. -->
+
+    <!-- Enable TR-069. 0 - No, 1 - Yes (default is Yes) -->
+    <P1409>0</P1409>
+
+    <!--
+        FIRMWARE
+    -->
+    <P192>yourdomain.com/grandstream/firmware</P192> <!-- Firmware Server Path -->
+    <P238>0</P238> <!-- Firmware Check, 0=Always Check for New Firmware, 1=Check New Firmware only when F/W pre/suffix changes, 2=Always Skip the Firmware Check -->
+    <P194>1</P194> <!-- Automatic Upgrade. 0 - No, 1 - Check daily, 2 - Check weekly, 3 - Check every () minutes. Default is No. -->
+	<P285>21</P285> <!-- Firmware Automatic Upgrade Start Hour. Daily at hour(0-23). Number: 0 to 23 -->
+    <P8459>23</P8459> <!-- Firmware Automatic Upgrade End Hour. Daily at hour(0-23). Number: 0 to 23 -->
+    <P193>30</P193> <!-- Check for new firmware/config file every () minutes, unit is in minute, minimum 30 minutes, default is 7 days. -->
+
+    <!--
+        NETWORK
+    -->
+    <P231>1</P231> <!-- Device Mode. 0 -NAT Router, 1 - Bridge -->
+    <P8>0</P8> <!-- # IP Address Mode. 0 - DHCP, 1 - Static IP, 2 - PPPoE -->
+    <P130>0</P130> <!-- SIP Transport 0 - UDP, 1 - TCP, 2 - TLS -->
+    <P76></P76> <!-- Stun server -->
+    <P474>0</P474> <!-- Use STUN to detect network connectivity. 0 - No, 1 - Yes. -->
+
+    <!--
+        FAX
+    -->
+    <P228>0</P228> <!-- FAX Mode. 0 - T.38 (Auto Detect), 1 - Pass Through -->
+    <P4416>1</P4416> <!-- Re-INVITE After Fax Tone Detected. 0 - Disabled, 1 - Enabled. -->
+
+    <!--
+        TIME
+    -->
+    <P30></P30> <!-- NTP Server -->
+    <P64>PST8PDT</P64> <!-- Time Zone, GMT-08:00 (US Pacific Time, Los Angeles) -->
+    <P143>1</P143> <!-- Allow DHCP server to set Time Zone. 0 - No, 1 - Yes -->
+
+    <!-- Profile #1 -->
+    <P47></P47> <!-- SIP Server -->
+    <P271>1</P271> <!-- Account Active. 0 - No, 1 - Yes. -->
+
+    <!-- Profile #2 -->
+    <P747></P747> <!-- Sip Server -->
+    <P401>0</P401> <!-- Account Active. 0 - No, 1 - Yes. -->
+
+    <!-- Port #1 -->
+    <P4060></P4060> <!-- username -->
+    <P4120></P4120> <!-- password -->
+    <P4180></P4180> <!-- name -->
+    <P4150>0</P4150> <!-- Profile. 0 - Profile 1, 1 - Profile 2 -->
+
+    <!-- Port #2 -->
+    <P4061></P4061> <!-- username -->
+    <P4121></P4121> <!-- password -->
+    <P4181></P4181> <!-- name -->
+    <P4151>0</P4151> <!-- Profile. 0 - Profile 1, 1 - Profile 2 -->
+
+    <!-- Port #3 -->
+    <P4062></P4062> <!-- username -->
+    <P4122></P4122> <!-- password -->
+    <P4182></P4182> <!-- name -->
+    <P4152>0</P4152> <!-- Profile. 0 - Profile 1, 1 - Profile 2 -->
+
+    <!-- Port #4 -->
+    <P4063></P4063> <!-- username -->
+    <P4123></P4123> <!-- password -->
+    <P4183></P4183> <!-- name -->
+    <P4153>0</P4153> <!-- Profile. 0 - Profile 1, 1 - Profile 2 -->
+
+  </config>
+</gs_provision>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Grandstream HT814 XML Provisioning Configuration. -->
+<gs_provision version="1">
+<mac>CHANGEME_MAC_ADDRESS</mac>
+  <config version="1">
+    <!-- device name -->
+    <P146>ata_CHANGEME</P146>
+
+    <!-- Admin password for web interface -->
+    <P2>password</P2>
+
+    <!-- Profile #1 -->
+    <P47></P47> <!-- SIP Server -->
+    <P271>0</P271> <!-- Account Active. 0 - No, 1 - Yes. -->
+
+    <!-- Profile #2 -->
+    <P747></P747> <!-- Sip Server -->
+    <P401>0</P401> <!-- Account Active. 0 - No, 1 - Yes. -->
+
+    <!-- Port #1 -->
+    <P4060></P4060> <!-- username -->
+    <P4120></P4120> <!-- password -->
+    <P4180></P4180> <!-- name -->
+    <P4150>0</P4150> <!-- Profile. 0 - Profile 1, 1 - Profile 2 -->
+
+    <!-- Port #2 -->
+    <P4061></P4061> <!-- username -->
+    <P4121></P4121> <!-- password -->
+    <P4181></P4181> <!-- name -->
+    <P4151>0</P4151> <!-- Profile. 0 - Profile 1, 1 - Profile 2 -->
+
+    <!-- Port #3 -->
+    <P4062></P4062> <!-- username -->
+    <P4122></P4122> <!-- password -->
+    <P4182></P4182> <!-- name -->
+    <P4152>0</P4152> <!-- Profile. 0 - Profile 1, 1 - Profile 2 -->
+
+    <!-- Port #4 -->
+    <P4063></P4063> <!-- username -->
+    <P4123></P4123> <!-- password -->
+    <P4183></P4183> <!-- name -->
+    <P4153>0</P4153> <!-- Profile. 0 - Profile 1, 1 - Profile 2 -->
+
+  </config>
+</gs_provision>

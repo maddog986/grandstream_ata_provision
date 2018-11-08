@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Grandstream HT802 XML Provisioning Configuration. -->
+<gs_provision version="1">
+<mac>CHANGEME_MAC_ADDRESS</mac>
+  <config version="1">
+    <!-- device name -->
+    <P146>ata_CHANGEME</P146>
+
+    <!-- Admin password for web interface -->
+    <P2>CHANGEME</P2>
+
+    <!-- Port #1 -->
+    <P271>0</P271> <!-- # Account Active. 0 - No, 1 - Yes. Default value is 0 -->
+    <P35></P35> <!-- # SIP User ID -->
+    <P34></P34> <!-- # SIP Authenticate Password -->
+
+    <!-- Port #2 -->
+    <P401>0</P401> <!-- # Account Active. 0 - No, 1 - Yes. Default value is 0 -->
+    <P735></P735> <!-- # SIP User ID -->
+    <P734></P734> <!-- # SIP Authenticate Password -->
+  </config>
+</gs_provision>
